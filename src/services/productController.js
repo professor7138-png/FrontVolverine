@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
 // Get a single product by ID
 export const getProductById = async (id) => {
   try {

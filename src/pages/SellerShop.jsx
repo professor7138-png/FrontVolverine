@@ -79,7 +79,7 @@ const SellerShop = () => {
   const handleSave = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api'}/users/seller/${currentUser._id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api'}/users/seller/${currentUser._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

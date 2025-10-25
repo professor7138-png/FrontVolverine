@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
 
 const EditUserModal = ({ user, onClose, onSaved }) => {
   const [form, setForm] = useState({

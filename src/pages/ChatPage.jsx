@@ -81,7 +81,7 @@ const ChatPage = () => {
       
       try {
         setLoading(true);
-        const API_URL = import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
         
         // First, get admin user
         let admin = null;
@@ -159,7 +159,7 @@ const ChatPage = () => {
       setLoading(true);
       console.log('Starting conversation with admin:', adminUser);
       
-      const API_URL = import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
       
       // SOLUTION: Use a simpler, more reliable approach
       // First look for existing conversations with admin (using the special 'admin' parameter)

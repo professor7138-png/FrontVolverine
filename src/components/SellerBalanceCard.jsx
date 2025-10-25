@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaCross } from 'react-icons/fa6';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
 
 const SellerBalanceCard = ({ stats, acceptedProfit }) => {
   const currentUser = JSON.parse(localStorage.getItem('alfauser'));

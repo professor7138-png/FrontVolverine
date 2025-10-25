@@ -1,6 +1,6 @@
 export const deleteMessage = async (messageId) => {
   try {
-    const API_URL = import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api';
+    const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
     const response = await axios.delete(
       `${API_URL}/chat/messages/${messageId}`,
       { headers: getAuthHeader() }
@@ -13,7 +13,7 @@ export const deleteMessage = async (messageId) => {
 };
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
 
 const getAuthHeader = () => {
   const user = JSON.parse(localStorage.getItem('alfauser'));
@@ -47,7 +47,7 @@ export const getConversations = async () => {
 
 export const getOrCreateConversation = async (otherUserId) => {
   try {
-    const API_URL = import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api';
+    const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
     
     console.log(`Getting or creating conversation with user: ${otherUserId}`);
     

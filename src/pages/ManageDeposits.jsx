@@ -54,7 +54,7 @@ const ManageDeposits = () => {
     const fetchSellers = async () => {
       try {
         const token = JSON.parse(localStorage.getItem('alfauser'))?.token;
-        const res = await axios.get(`${import.meta.env.VITE_API_URL || 'https://secure-celebration-production.up.railway.app/api'}/users`, {
+        const res = await axios.get(`${import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api'}/users`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setSellers(res.data.filter(u => u.role === 'seller'));
