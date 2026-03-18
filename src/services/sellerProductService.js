@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://bkvolvorine.vercel.app/api';
 
 // Helper function to get auth headers
 const getAuthHeaders = () => {

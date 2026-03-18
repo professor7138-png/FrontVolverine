@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { MdDeleteForever } from 'react-icons/md';
-const API_URL = import.meta.env.VITE_API_URL || 'https://backvolverine.vercel.app/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://bkvolvorine.vercel.app/api';
 
 function SellerProducts() {
   const [products, setProducts] = useState([]);

@@ -114,7 +114,7 @@ function LandingPage() {
     <Footer />;
     const API_URL =
       import.meta.env.VITE_API_URL ||
-      "https://backvolverine.vercel.app/api";
+      "https://bkvolvorine.vercel.app/api";
     fetch(`${API_URL}/products`, {
       method: "GET",
       headers: {
